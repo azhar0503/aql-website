@@ -1,0 +1,227 @@
+/* General body and html settings */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+/* Header section settings */
+header {
+    position: relative;
+    height: 100vh;
+    background: url('mainbg.png') no-repeat center center/cover;
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px; /* Adjust to make it as thin as you want */
+    background-color: #0097b2; /* Background color of the navigation */
+    height: 70px; /* Control the height of the navbar */
+    border-bottom: 2px solid black;
+}
+
+/* Logo */
+.logo img {
+    height: 68px; /* Keep logo at the desired size */
+    width: auto;
+    margin-left: 30px;
+}
+
+/* Navigation Links */
+.nav-links a {
+    text-decoration: none;
+    margin-left: 20px;
+    background-color: #ffe600;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #ffcc00}
+
+/* Make sure the height of nav bar does not affect logo size */
+.navbar .logo img {
+    display: block;
+    max-height: 100%; /* Keep image constrained to logo height */
+}
+
+
+/* Hero section (image with text) */
+.hero {
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Darken the background */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: -65px;
+    text-transform: uppercase;
+}
+
+.hero h2 {
+    font-size: 50px;
+    color: #edde2f;
+    text-transform: uppercase;
+}
+
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the section */
+.section-container {
+    display: flex;
+    height: 400px; /* Adjust the height as needed */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
+/* Left side with the cyan background */
+.left-side {
+    background-color: #0097b2; /* Cyan color */
+    color: white; /* Text color */
+    width: 50%; /* Half the container width */
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 20px; /* Spacing inside */
+    text-align: center; /* Center the text */
+}
+
+/* Image styling */
+.map-image {
+    width: 85%; /* Adjust the size as needed */
+    margin-top: 20px;
+}
+
+/* Right side with the white background */
+.right-side {
+    background-color: #ffffff; /* White color */
+    color: black; /* Text color */
+    width: 50%; /* Half the container width */
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Center items vertically */
+    padding: 20px; /* Spacing inside */
+    align-items: center;
+    margin-top: -40px;
+}
+
+.right-side h2{
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.right-side p{
+    font-size: 20px;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/* Styling for the Learn More button */
+.learn-more-button {
+    display: inline-block;
+    background-color: #ffe600; /* Button background color */
+    color: black; /* Button text color */
+    padding: 10px 20px; /* Padding inside the button */
+    margin-top: 20px; /* Space above the button */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+}
+
+/* Hover effect for the Learn More button */
+.learn-more-button:hover {
+    background-color: #ffcc00; /* Darker shade on hover */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Footer Container */
+.footer {
+    background-image: url('footerbg.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 60px 20px;
+    color: white;
+}
+
+/* Overlay to darken the background for better text visibility */
+.footer-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Darken the background */
+    padding: 40px;
+    text-align: center;
+}
+
+/* Footer Heading */
+.footer h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Footer Content: Columns for the details */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Individual Footer Columns */
+.footer-column {
+    flex-basis: 22%; /* Adjust width of each column */
+    margin: 20px 0;
+}
+
+/* Column Headings */
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Yellow color for the headings */
+    font-weight: bold;
+}
+
+/* Footer Text */
+.footer-column p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
